@@ -25,7 +25,7 @@
     <p><center><a class=credit href="https://www.hivestorm.org/">image courtesy of the Hivestorm webpage</a></center></p> 
 
     <p class=desc> 
-        Hivestorm is a collegiate cyber defense competition where teams secure provided Linux and Windows based virtual machines.
+        Hivestorm is a collegiate cyber defense competition where teams secure Linux and Windows based virtual machines.
         Some examples of vulnerability mitigation includes removing malware, correcting misconfigurations, and disabling vulnerable services. 
         Teams accumulate points for each issue addressed.
     </p>
@@ -33,25 +33,30 @@
     <br>
     <p><span> Overview </span> </p>
 
-    <p> During Hivestorm, I was a member of team069 with my incredible teammates George, Yusuf, and Dorian </p>
-    <p> Here was out final score chart at the the end of the competition</p>
+    <p> 
+        During Hivestorm, I was a member of team069 with my incredible teammates: George, Yusuf, and Dorian. 
+        Here was out final score chart at the the end of the competition.
+    </p>
+
     <center><img src="../imgs/hs-sb.JPG" alt="hs-scoreboard"></center>
 
-    <p> During this competition, I spent most of my time the Ubuntu 16 box. The score for each box is given out of 100 points, so I finished with
-        a final score of 14 during the time slot </p>
+    <p> 
+        During this competition, I spent most of my time the Ubuntu 16 box. The score for each box is given out of 100 points, so I finished with
+        a final score of 14 during the time slot. 
+    </p>
 
     <p><span> Time management </span></p>
 
-    <p> Unfortunately, two major errors I made cost me a lot of time on the virtual machine I was working on. For the competition, we were alloted a 
-        four hour time slot, and these mistakes took a hefty toll on my final score.
-
+    <p> 
+        Unfortunately, I made two major errors during the competition that costed me a lot of the time given to me. For the competition, 
+        we were alloted a four hour time slot, and these mistakes took a hefty toll on my final score.
     <center><img src="../imgs/hs-tl.JPG" alt="hs-timeline"></center>
 
     <p> 
-        The red line reflects my progression during the competition. As one can see, I had a lot of pitfalls and comebacks throughout the entire
-        competition, and this was the result of me updating my virtual box. During our practice image given to us before the competition, executing
-        a <code>sudo apt-get update || sudo apt-get upgrade</code> gained us some points. The problem during the actual competition, however, that
-        there were so many available packages and installations to the point of eating a decent portion of time during the early stages.
+        The red line reflects my progression during the competition. As one can see, I had a lot of pitfalls and comebacks, and this was the result of me 
+        updating my virtual box. During our practice image given to us before the competition, executing a <code>sudo apt-get update || sudo apt-get
+        upgrade</code> gave us a several points for updating essential programs. The problem during the actual competition, however, was that there were 
+        so many available packages and installations to the point where it was taking up a lot more time than I initially anticipated it to the early stages.
     </p>
 
     <p> 
@@ -69,26 +74,28 @@
     <p><span> What worked </span></p>
         
     <p> 
-        Although updating every single package on the machine lost me a ton of time, I ended up getting some points for updating essential processes. Some packages that 
-        successfully updated were firefox, nginx, and php, which all netted me some points.
+        Although updating every single package on the machine lost me a ton of time, I ended up getting some points for updating essential processes.
+        Some packages that successfully updated include firefox, nginx, and php, which all netted me some points.
     </p>
 
     <p> 
-        Going through the <code>/etc/passwd</code> file, I was able to identify unauthorized users and remove them accordingly. Similarly, I went through the
-        <code>/etc/groups</code> file in order to filter out users that had misconfigured privileges.
+        Going through the <code>/etc/passwd</code> file, I was able to identify unauthorized users and remove them accordingly. Similarly, I went through 
+        the <code>/etc/groups</code> file in order to filter out users that had misconfigured privileges.
     </p>
 
     <p> 
         Reconfiguring passwords was another essential step needed for points. I found certain users with insecure passwords (e.g less than 8 chars, no
-        capitals/numbers/special chars), and changed their passwords accordingly. 
+        capitals/numbers/special chars) and changed them accordingly. 
+    </p>
+
+    <p> 
+        Killing unauthorized/unnecessary processes was another small piece of my total score. Running a <code>netstat -plunt</code>
+        and comparing necessary processes being ran to the list given was sufficient for points.
     </p>
 
     <p>
-        Disallowing guest users was also needed. This was done with adding <code>allow-guest-false</code> to <code>/etc/lightdm/lightdm.conf</code>
-
+        Disallowing guest users was also needed, and this was done by configuring the <code>/etc/lightdm/lightdm.conf</code> file.
     </p>
-
-    <p> Killing unauthorized/unnecessary processes was another small piece of my total score</p>
 
     <p><span>Retrospectives</span></p>
 
@@ -99,10 +106,9 @@
     </p>
 
     <p>
-        Another big realization I had during the competition was that is was not very similar in difficulty to the practice image given to us. The practice
-        image gave me a basic understanding of how the scoring worked and how well my checklist was. I ended up getting around 75-85% of all the content
-        on this image, which gave me a false sense of confidence entering the competition. In a situation where I am
-        unfamiliar with the actual competition, I should be expected to prepare for anything thrown at me. 
+        The difficulty of the practice image was also not at all similar in comparison to the actual image I was given. I ended up getting around 75-85% of all 
+        the content on this practice image, which gave me a false sense of confidence entering the competition. In a situation where I am unfamiliar with the actual 
+        competition, I should be expected to prepare for anything thrown at me. 
     </p> 
 
     <p> 
@@ -119,13 +125,18 @@
         the vulnerabilities we know for sure we will need to fix (something I might make soon). It may also be worth it to look into Windows security,
         since I did not touch any of the windows boxes nor know what to look out for on their systems. Possibly something to keep in mind during team 
         consolation and time management with each box.
+    </p>
 
+    <p> 
+        One common theme among most of the problems I faced  were that I never anticipated for any of them. I assumed everything would work 
+        ahead of time, which appears to be a problematic mindset. I should expect to see broken aspects of anything during these competitions
+        and adapt accordingly in a reasonable amount of time.
     </p>
 
     <p><span>Conclusion</span></p>
     <p>
         There were a lot of key takeaways from this competition. It taught me a lot about the necessity of preparation behind a competition. If there is a
-        Hivestorm hosted in 2021, I will be able to obtain a lot more points in comparison to this year. Thank you to the CIAS for hosting the 
+        Hivestorm hosted in 2021, I will be a whole lot more prepared to crush this years score.Thank you to the CIAS for hosting the 
         competition as well! Also a huge thank you to the members on my team, as they helped me around during the competition and I wouldn't have
         learned as much without them.
     </p>

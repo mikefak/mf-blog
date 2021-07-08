@@ -17,9 +17,7 @@ a.title:link, a.title:visited {
     white-space: nowrap;
     text-decoration: underline rgba(63,94,251,1);
     font-weight: bold;
-    
 
-   
 }
 
 a.title:hover {
@@ -53,8 +51,8 @@ p {
     font-size: 25px;
     color: whitesmoke;
     text-align: left;
-    margin-left: 350px;
-    margin-right: 350px;
+    margin-left: 450px;
+    margin-right: 450px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
@@ -86,9 +84,18 @@ a.credit {
 
 }
 
+img.pics {
+
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(94,70,252,1) 100%);
+    margin-left: 450px;
+    margin-right: 600px;
+    width: 970px;
+}
+
 img {
 
     background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(94,70,252,1) 100%);
+
 }
 
 span {

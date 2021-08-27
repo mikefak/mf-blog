@@ -129,3 +129,7 @@ a.list:hover {
     background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(94,70,252,1) 100%);
 
 }
+
+@media screen and (max-width: 1600px) {
+    html {zoom: 80%;}
+  }

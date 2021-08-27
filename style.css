@@ -93,7 +93,7 @@ p.desc {
 
 p.foot {
 
-    font-size: 20px;
+    font-size: 15px;
 
 }
 
@@ -163,7 +163,6 @@ img.purple {
     height: 240px;
     width: 250px;
 
-
 }
 
 p {
@@ -173,3 +172,7 @@ p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
 }
+
+@media screen and (max-width: 1600px) {
+    html {zoom: 80%;}
+  }

@@ -119,3 +119,7 @@ p.aboutme {
 
     text-align: center;
 }
+
+@media screen and (max-width: 1600px) {
+    html {zoom: 80%;}
+  }

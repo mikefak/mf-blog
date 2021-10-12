@@ -41,20 +41,20 @@ p.desc {
     font-size: 20px;
     color: white;
     text-align: center;
-    margin-left: 350px;
-    margin-right: 350px;
+    margin-left: 520px;
+    margin-right: 520px;
     font-style: italic;
 }
 
 p {
 
-    font-size: 25px;
+    font-size: 20px;
     color: whitesmoke;
     text-align: left;
-    margin-left: 450px;
-    margin-right: 450px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+    margin-left: 550px;
+    margin-right: 550px;
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    word-spacing: 3px;
 }
 
 .footer {
@@ -87,9 +87,7 @@ a.credit {
 img.pics {
 
     background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(94,70,252,1) 100%);
-    margin-left: 450px;
-    margin-right: 600px;
-    width: 970px;
+    width: 800px;
 }
 
 img {
@@ -123,3 +121,15 @@ p.aboutme {
 @media screen and (max-width: 1600px) {
     html {zoom: 80%;}
   }
+
+  @media only screen and (max-width: 640px)  {
+    html {zoom: 33%;}
+}
+
+@media only screen and (max-width: 800px)  {
+    html {zoom: 33%;}
+}
+
+@media only screen and (max-width: 1000px)  {
+    html {zoom: 33%;}
+}

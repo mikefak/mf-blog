@@ -176,3 +176,15 @@ p {
 @media screen and (max-width: 1600px) {
     html {zoom: 80%;}
   }
+
+  @media only screen and (max-width: 640px)  {
+    html {zoom: 33%;}
+}
+
+@media only screen and (max-width: 800px)  {
+    html {zoom: 33%;}
+}
+
+@media only screen and (max-width: 1000px)  {
+    html {zoom: 33%;}
+}

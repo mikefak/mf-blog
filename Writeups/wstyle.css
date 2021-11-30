@@ -38,7 +38,7 @@ h1 {
 
 p.desc {
 
-    font-size: 20px;
+    font-size: 15px;
     color: white;
     text-align: center;
     margin-left: 520px;
@@ -118,6 +118,15 @@ p.aboutme {
     text-align: center;
 }
 
+a.list {
+    display: flex;
+    word-spacing: 100px;
+    display:inline-block;
+}
+
+p.bold {
+    font-weight: bold;
+}
 @media screen and (max-width: 1600px) {
     html {zoom: 80%;}
   }

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html>
+
+    <title>Mike F</title>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="wstyle.css">
+    <link rel="shortcut icon" type="image/png" href="../imgs/bluepurpleplanet.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+<head>
+
+</head>
+
+<body>
+
+    <div>
+
+        <h1><a class=title
+            href="../MyWebsite.html">MikeFak
+        </a></h1>
+
+    </div>
+
+    <center><img src="../imgs/hivestorm-logo.png" alt="Hivestorm-Icon" width="500" height="130"></center>
+    <p><center><a class=credit href="https://www.hivestorm.org/">image courtesy of the Hivestorm webpage</a></center></p> 
+
+    <p class=desc> 
+        Hivestorm is a collegiate cyber defense competition where teams secure Linux and Windows based virtual machines.
+        Some examples of vulnerability mitigation includes removing malware, correcting misconfigurations, and disabling vulnerable services. 
+        Teams accumulate points for each issue addressed.
+    </p>
+
+    <br>
+
+    <p><span> Overview </span> </p>
+
+    <br>
+    <p class=design > 
+        During Hivestorm, I was a member of team069 with my incredible teammates: George, Yusuf, and Dorian. 
+         Here was out final score chart at the the end of the competition.
+    </p>
+
+    <center><img class=pics src="../imgs/hs-sb.JPG" alt="hs-scoreboard"></center>
+
+    <br>
+    <p> 
+        During this competition, I spent most of my time the Ubuntu 16 box. The score for each box is given out of 100 points, so I finished with
+        a final score of 14 during the time slot. In comparison to other teams: the top linux boxes this year scored around 60 - 75 points and the average
+        total team score was around 100.
+    </p>
+
+    <p><span> Time management </span></p>
+    <br>
+    <p> 
+        Unfortunately, I made two major errors during the competition that costed me a lot of the time given to me. For the competition, 
+        we were alloted a four hour time slot, and these mistakes took a hefty toll on my final score.
+    <center><img class=pics src="../imgs/hs-tl.JPG" alt="hs-timeline"></center>
+
+    <br>
+    <p> 
+        The red line reflects my progression during the competition. As one can see, I had a lot of pitfalls and comebacks, and this was the result of me 
+        updating my virtual box. During our practice image given to us before the competition, executing a <code>sudo apt-get update || sudo apt-get
+        upgrade</code> gave us a several points for updating essential programs. The problem during the actual competition, however, was that there were 
+        so many available packages and installations to the point where it was taking up a lot more time than I initially anticipated it to the early stages.
+    </p>
+
+    <p> 
+        At the end of the update, I was prompted to restart the computer. This restart completely bricked my computer, and I had to start all over.
+        This occurred around the 17:20 mark.
+    </p>
+
+    <p>
+        Along with this, the web based virtual machine I was using was being incredibly dysfunctional. Not only was it moving incredibly slow, but my 
+        keystrokes were being duplicated frequently. This was my second major time loss, and I had to refer to the Hivestorm white team on their discord.
+        The solution was installing VMWare on my computer, which ran the virtual machine miles more efficiently.
+
+    </p>
+
+    <p><span> What worked </span></p>
+    <br>
+    <p> 
+        Although updating every single package on the machine lost me a ton of time, I ended up getting some points for updating essential processes.
+        Some packages that successfully updated include firefox, nginx, and php, which all netted me some points.
+    </p>
+
+    <p> 
+        Going through the <code>/etc/passwd</code> file, I was able to identify unauthorized users and remove them accordingly. Similarly, I went through 
+        the <code>/etc/groups</code> file in order to filter out users that had misconfigured privileges.
+    </p>
+
+    <p> 
+        Reconfiguring passwords was another essential step needed for points. I found certain users with insecure passwords (e.g less than 8 chars, no
+        capitals/numbers/special chars) and changed them accordingly. 
+    </p>
+
+    <p> 
+        Killing unauthorized/unnecessary processes was another small piece of my total score. Running a <code>netstat -plunt</code>
+        and comparing necessary processes being ran to the list given was sufficient for points.
+    </p>
+
+    <p>
+        Disallowing guest users was also needed, and this was done by configuring the <code>/etc/lightdm/lightdm.conf</code> file.
+    </p>
+
+    <p><span>Retrospectives</span></p>
+    <br>
+    <p> 
+        One big takeaway that could have saved me a lot of hassle is to update individual packages rather than updating every single package
+        on the virtual machine. We are given a list of essential/necessary applications for each box, so if I update these packages individually, I will
+        most likely save a lot more time.
+    </p>
+    <p>
+        The difficulty of the practice image was also not at all similar in comparison to the actual image I was given. I ended up getting around 75-85% of all 
+        the content on this practice image, which gave me a false sense of confidence entering the competition. In a situation where I am unfamiliar with the actual 
+        competition, I should be expected to prepare for anything thrown at me. 
+    </p> 
+    <p> 
+        Installing VMWare was also a huge time loss for me as mentioned earlier. I don't really know how I could have avoided this, as multiple other 
+        students were also sharing the same problem to the white team. At least, now I know that VMWare is an excellent program for running
+        virtual machines. As a matter of fact, this problem gave me experience in contacting the white team during a competition format, which could be 
+        an essential step to repairing an issue in future competitions.
+
+    </p>
+
+    <p>
+        Now that I have also practiced bash scripting, I may be able to automate some practices during the competition in a more efficient manner. This 
+        can possibly include searching for unauthorized users automatically (something I made already on my github), or an all in one set up script for 
+        the vulnerabilities we know for sure we will need to fix (something I might make soon). It may also be worth it to look into Windows security,
+        since I did not touch any of the windows boxes nor know what to look out for on their systems. Possibly something to keep in mind during team 
+        consolation and time management with each box.
+    </p>
+
+    <p> 
+        One common theme among most of the problems I faced  were that I never anticipated for any of them. I assumed everything would work 
+        ahead of time, which appears to be a problematic mindset. I should expect to see broken aspects of anything during these competitions
+        and adapt accordingly in a reasonable amount of time.
+    </p>
+
+    <p><span>Conclusion</span></p>
+    <br>
+    <p>
+        There were a lot of key takeaways from this competition. It taught me a lot about the necessity of preparation behind a competition. If there is a
+        Hivestorm hosted in 2021, I will be a whole lot more prepared to crush this years score. Thank you to the CIAS for hosting the 
+        competition as well! Also a huge thank you to the members on my team, as they helped me around during the competition and I wouldn't have
+        learned as much without them.
+    </p>
+    <p><i>Mike F</i></p>
+    <br>
+
+    <div class=footer>
+
+        <p class=foot> </p>
+
+    </div>
+    
+</body>
+</html>

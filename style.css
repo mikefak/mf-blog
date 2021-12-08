@@ -1,6 +1,6 @@
 body {
 
-    background-image: url("imgs/potbkrnd.png")
+    background-image: url("imgs/potbkrnd2.png")
 }
 
 
@@ -26,9 +26,10 @@ a.title:hover {
 h1 {
 
     color:white;
-    margin-top: 80px;
+    margin-top: 70px;
     margin-left: 260px;
     font-family: 'Courier New', monospace;
+    line-height: 10px;
     
 }
 
@@ -41,18 +42,18 @@ p {
     
 }
 
-.bulletpointsa {
+/* .bulletpointsa {
 
-    height:25px;
+    height:30px;
     width:20px;
     background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(94,70,252,1) 100%);
     margin-left: 260px;
 
-}
+} */
 
 .bulletpointsp {
 
-    height:220px;
+    height:230px;
     width:20px;
     background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(94,70,252,1) 100%);
     margin-left: 260px;
@@ -61,7 +62,7 @@ p {
 }
 .bulletpointsc {
 
-    height:137px;
+    height:230px;
     width:20px;
     background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(94,70,252,1) 100%);
     margin-left: 260px;
@@ -115,8 +116,8 @@ a.list:hover {
 p.dates {
 
     margin-bottom: 20px;
-    color: gray;
-    font-size: 15px;
+    color: #b2b2b2;
+    font-size: 13px;
     white-space: nowrap;
     font-style: italic;
     margin-top: -15px;    
@@ -204,4 +205,21 @@ a.test {
 
 @media only screen and (max-width: 1000px)  {
     html {zoom: 33%;}
+}
+
+a.cent {
+
+    margin-left: 364px;
+    font-size: 18px;
+    margin-bottom: 100px;
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a.cent:hover {
+
+    font-size: 20px;
+    color: #dfdaf8;
 }

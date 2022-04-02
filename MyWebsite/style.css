@@ -1,0 +1,242 @@
+
+
+body {
+
+background-image: url("imgs/potbkrnd2.png");
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+
+img {
+    background: transparent;
+}
+a.title:link, a.title:visited {
+
+    position: sticky;
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+    font-stretch: ultra-expanded;
+    white-space: nowrap;
+    text-shadow: 4px 4px 4px rgba(63,94,251,1);
+    font-weight: bold;
+   
+}
+
+a.title:hover {
+
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(94,70,252,1) 100%);
+}
+
+h1 {
+
+    white-space: nowrap;
+    color:white;
+    margin-top: 70px;
+    padding-left: 260px;
+    font-family: 'Courier New', monospace;
+    line-height: 10px;
+    text-shadow: 4px 4px 4px rgba(63,94,251,1);
+    text-overflow: ellipsis;
+   
+}
+
+p {
+
+    color:white;
+    padding-left: 30px;
+    font-size: 20px;
+    white-space: nowrap;
+    
+}
+
+.bulletpointsp {
+
+    height:250px;
+    width:20px;
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(94,70,252,1) 100%);
+    margin-left: 260px;
+    
+
+}
+.bulletpointsc {
+
+    height:180px;
+    width:20px;
+    background: radial-gradient(rgba(63,94,251,1) 0%, rgba(94,70,252,1) 100%);
+    margin-left: 260px;
+
+}
+p.desc {
+
+    color:inherit;
+    margin-right: 1200px;
+    font-size: 25px;
+    margin-left: 290px;
+    white-space: nowrap;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-style:oblique;
+
+}
+
+.footer {
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: radial-gradient(rgba(63,94,251,1) 0%, rgba(94,70,252,1) 100%);
+    text-align: center;
+  }
+
+p.foot {
+
+    font-size: 15px;
+}
+
+a.list:link, a.list:visited {
+
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    white-space: nowrap;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+a.list:hover {
+
+    font-size: 21px;
+    color: #9281f1;
+}
+
+p.dates {
+
+    margin-bottom: 25px;
+    color: #b2b2b2;
+    font-size: 11px;
+    white-space: nowrap;
+    font-style: italic;
+    margin-top: -15px;    
+
+}
+
+img.pic {
+
+    float: right;
+    margin-right: 100px;
+    margin-top: 20px;
+    height: 240px;
+    width: 250px;
+
+}
+img.test {
+
+    position: absolute;
+    right: 300px;
+    top: 30px;
+    height: 650px;
+    width: 650px;
+}
+
+img.test2 {
+
+    position: absolute;
+    right: 150px;
+    bottom: 60px;
+    height: 500px;
+    width: 500px;
+}
+
+img.star {
+
+    position: absolute;
+    right: 600px;
+    bottom: 30px;
+    height: 500px;
+    width: 500px;
+}
+
+img.purple {
+
+    float: right;
+    margin-right: 100px;
+    margin-top: 400px;
+    height: 240px;
+    width: 250px;
+
+}
+
+p {
+
+    font-size: 15px;
+    color: whitesmoke;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+div.bot {
+
+    text-align: center;
+    margin-top: 70px;
+    font-size: 25px;
+    color: whitesmoke;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    white-space: nowrap;
+}
+a.test {
+
+    margin-left: 65px;
+    color: whitesmoke;
+    font-size: 20px;
+    white-space: nowrap;
+    font-style: italic;
+    margin-top: -30px;   
+}
+
+a.cent {
+
+    margin-left: 364px;
+    font-size: 18px;
+    margin-bottom: 100px;
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a.cent:hover {
+
+    font-size: 20px;
+    color: #dfdaf8;
+}
+#plus{
+    margin-top: 50%;
+}
+
+@media screen and (max-width:1300px) {  
+    img.test {
+      display: none;
+    } 
+@media screen and (max-width:1300px) {  
+    img.test2 {
+        display: none;
+    }
+@media screen and (max-width:1000px) {  
+    
+    h1 {
+        color:white;
+        margin-top: 70px;
+        font-family: 'Courier New', monospace;
+        line-height: 10px;
+        text-shadow: 4px 4px 4px rgba(63,94,251,1);
+       
+    }
+
+}
+}
+}

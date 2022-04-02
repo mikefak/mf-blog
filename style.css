@@ -1,9 +1,17 @@
+
+
 body {
 
-    background-image: url("imgs/potbkrnd2.png")
+background-image: url("imgs/potbkrnd2.png");
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
 }
 
-
+img {
+    background: transparent;
+}
 a.title:link, a.title:visited {
 
     position: sticky;
@@ -12,7 +20,7 @@ a.title:link, a.title:visited {
     font-size: 35px;
     font-stretch: ultra-expanded;
     white-space: nowrap;
-    text-decoration: underline rgba(63,94,251,1);
+    text-shadow: 4px 4px 4px rgba(63,94,251,1);
     font-weight: bold;
    
 }
@@ -25,35 +33,29 @@ a.title:hover {
 
 h1 {
 
+    white-space: nowrap;
     color:white;
     margin-top: 70px;
-    margin-left: 260px;
+    padding-left: 260px;
     font-family: 'Courier New', monospace;
     line-height: 10px;
-    
+    text-shadow: 4px 4px 4px rgba(63,94,251,1);
+    text-overflow: ellipsis;
+   
 }
 
 p {
 
     color:white;
-    margin-left: 30px;
+    padding-left: 30px;
     font-size: 20px;
     white-space: nowrap;
     
 }
 
-/* .bulletpointsa {
-
-    height:30px;
-    width:20px;
-    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(94,70,252,1) 100%);
-    margin-left: 260px;
-
-} */
-
 .bulletpointsp {
 
-    height:230px;
+    height:250px;
     width:20px;
     background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(94,70,252,1) 100%);
     margin-left: 260px;
@@ -62,9 +64,9 @@ p {
 }
 .bulletpointsc {
 
-    height:230px;
+    height:180px;
     width:20px;
-    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(94,70,252,1) 100%);
+    background: radial-gradient(rgba(63,94,251,1) 0%, rgba(94,70,252,1) 100%);
     margin-left: 260px;
 
 }
@@ -87,14 +89,13 @@ p.desc {
     left: 0;
     bottom: 0;
     width: 100%;
-    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(94,70,252,1) 100%);
+    background: radial-gradient(rgba(63,94,251,1) 0%, rgba(94,70,252,1) 100%);
     text-align: center;
   }
 
 p.foot {
 
     font-size: 15px;
-
 }
 
 a.list:link, a.list:visited {
@@ -110,14 +111,14 @@ a.list:link, a.list:visited {
 a.list:hover {
 
     font-size: 21px;
-    color: #dfdaf8;
+    color: #9281f1;
 }
 
 p.dates {
 
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     color: #b2b2b2;
-    font-size: 13px;
+    font-size: 11px;
     white-space: nowrap;
     font-style: italic;
     margin-top: -15px;    
@@ -133,25 +134,31 @@ img.pic {
     width: 250px;
 
 }
+img.test {
 
-img.blue {
-
-    float: right;
-    margin-right: 100px;
-    margin-top: 300px;
-    height: 240px;
-    width: 250px;
-
+    position: absolute;
+    right: 300px;
+    top: 30px;
+    height: 650px;
+    width: 650px;
 }
 
-img.purpblue {
+img.test2 {
 
-    float: right;
-    margin-right: 100px;
-    margin-top: 0px;
-    height: 230px;
-    width: 250px;
+    position: absolute;
+    right: 150px;
+    bottom: 60px;
+    height: 500px;
+    width: 500px;
+}
 
+img.star {
+
+    position: absolute;
+    right: 600px;
+    bottom: 30px;
+    height: 500px;
+    width: 500px;
 }
 
 img.purple {
@@ -166,10 +173,10 @@ img.purple {
 
 p {
 
-    font-size: 25px;
+    font-size: 15px;
     color: whitesmoke;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
+
 }
 
 div.bot {
@@ -191,22 +198,6 @@ a.test {
     margin-top: -30px;   
 }
 
-@media screen and (max-width: 1600px) {
-    html {zoom: 80%;}
-  }
-
-  @media only screen and (max-width: 640px)  {
-    html {zoom: 33%;}
-}
-
-@media only screen and (max-width: 800px)  {
-    html {zoom: 33%;}
-}
-
-@media only screen and (max-width: 1000px)  {
-    html {zoom: 33%;}
-}
-
 a.cent {
 
     margin-left: 364px;
@@ -222,4 +213,30 @@ a.cent:hover {
 
     font-size: 20px;
     color: #dfdaf8;
+}
+#plus{
+    margin-top: 50%;
+}
+
+@media screen and (max-width:1300px) {  
+    img.test {
+      display: none;
+    } 
+@media screen and (max-width:1300px) {  
+    img.test2 {
+        display: none;
+    }
+@media screen and (max-width:1000px) {  
+    
+    h1 {
+        color:white;
+        margin-top: 70px;
+        font-family: 'Courier New', monospace;
+        line-height: 10px;
+        text-shadow: 4px 4px 4px rgba(63,94,251,1);
+       
+    }
+
+}
+}
 }

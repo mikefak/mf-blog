@@ -1,24 +1,21 @@
 body {
 
     background-image: url("../imgs/potbkrnd2.png");
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    padding: 40px;
+    max-width: 900px;
+    
 }
 
 
 a.title:link, a.title:visited {
 
-    position: sticky;
     color: white;
-    text-align: center;
     text-decoration: none;
-    font-size: 35px;
+    font-size: 32px;
     font-stretch: ultra-expanded;
     white-space: nowrap;
-    text-decoration: underline rgba(63,94,251,1);
     font-weight: bold;
-    
-
    
 }
 
@@ -31,40 +28,38 @@ a.title:hover {
 h1 {
 
     color:white;
-    margin-top: 80px;
-    margin-left: 100px;
     font-family: 'Courier New', monospace;
+    text-shadow: 4px 4px 4px rgba(63,94,251,1);
+    
     
 }
 
 h2 {
 
-    color:white;
+    color:#ebebeb;
     font-family: 'Courier New', monospace;
     font-size: 37px;
+    position: sticky;
     text-align: center;
     
 }
 
-
 p.desc {
 
     font-size: 20px;
-    color: white;
+    color: #ebebeb;
     text-align: center;
-    margin-left: 450px;
-    margin-right: 450px;
     font-style: italic;
+    
+
 }
 
 p {
 
-    font-size: 25px;
-    color: whitesmoke;
-    text-align: left;
-    margin-left: 450px;
-    margin-right: 450px;
-    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    color: #ebebeb;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
 
@@ -87,7 +82,7 @@ p.foot {
 a.credit {
 
     font-size: 13px;
-    color: white;
+    color: #ebebeb;
     text-align: center;
     font-style: italic;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -102,7 +97,6 @@ img {
 
 span {
 
-    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(94,70,252,1) 100%);
     font-size: 40px;
     font-weight: bold;
 }
@@ -111,20 +105,20 @@ p.title {
 
     font-size: 50px;
     text-align: center;
+    text-shadow: 4px 4px 4px rgba(63,94,251,1);
     
 }
 
 code {
 
-    background-color: #1e1e1e;
+    color: #9281f1;
 }
 
 a.list:link, a.list:visited {
 
-    color: white;
+    color: #ebebeb;
     text-decoration: none;
-    font-size: 25px;
-    white-space: nowrap;
+    font-size: 20px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     position: sticky;
     text-decoration: none;
@@ -136,11 +130,22 @@ a.list:link, a.list:visited {
 
 a.list:hover {
 
-    font-size: 26px;
+    font-size: 21px;
     background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(94,70,252,1) 100%);
 
 }
 
-@media screen and (max-width: 1600px) {
-    html {zoom: 80%;}
-  }
+blockquote {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:#373c80;
+    font-style: italic;
+    font-size: 18px;
+    background: whitesmoke;
+    border-left: 0.7rem solid rgba(63,94,251,1);
+    border-right: 0.7rem solid rgba(63,94,251,1);
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0.8rem;
+    font-weight: bold;
+}
+
